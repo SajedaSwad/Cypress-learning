@@ -1,16 +1,8 @@
-// describe('template spec', () => {
-//   it('passes', () => {
-//     cy.visit('https://example.cypress.io')
-//   })
-// })
-//<reference type = "cypress"\> 
-// const cypress = require("cypress")
-// describe('My First Test', () => {
-//   it('Does not do much!', () => { expect(true).to.equal(false)
-//   })
-// })
+///  <reference types ="cypress"/> 
 it("Google search",()=>{
 cy.visit('http://google.com')
-cy.get('#APjFqb').type("automation step by step {Enter}")
+cy.get('#APjFqb',{timeout:6000}).type("automation step by step {Enter}")
+cy.wait(2000)
+cy.contains('فيديوهات').click()
 // cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click() click on google search button 
 })
