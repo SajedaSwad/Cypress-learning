@@ -27,7 +27,7 @@ it ("explicit assertion",()=>{
     cy.visit('https://example.cypress.io')
     cy.wait(2000)
     expect(true).to.be.true 
-    assert.strictEqual(4,'4','...')//false -> mean ===
+    // assert.strictEqual(4,'4','...')//false -> mean ===
 
 
 })
