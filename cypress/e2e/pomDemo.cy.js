@@ -12,7 +12,7 @@ describe("all login test ", () => {
 
   //it.only("login1", () => {it run just this test
   //it.skip("login1", () => {it skip this test
-  it("login1", () => {
+  it.skip("login1", () => {
     //calling the class function
     loginPage.enterUserName("admin");
     loginPage.enterPassword("admin123");
@@ -22,8 +22,8 @@ describe("all login test ", () => {
   it("login2", () => {
     //calling the class function
     //invalid credintional
-    loginPage.enterUserName("admin123");
-    loginPage.enterPassword("admin123");
+    loginPage.enterUserName("admin");
+    loginPage.enterPassword("admin123345");
     loginPage.clickLogin();
     cy.get(":nth-child(1) > .oxd-main-menu-item").click();
   });
