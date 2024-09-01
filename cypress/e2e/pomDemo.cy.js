@@ -1,6 +1,7 @@
 //page object model
 /// <reference types="cypress"/>
 
+//grouping test
 import { LoginPage } from "./pages/login-page";
 var loginPage = new LoginPage(); //create object of the class
 
