@@ -9,5 +9,13 @@ it("Read files using fixture", () => {
     cy.log(data.email);
   });
 
-  cy.log(test_data.name); //for some reason it not work
+  // cy.log(test_data.name); //for some reason it not work
+});
+
+/////
+
+it("read file using readFile()", () => {
+  cy.readFile("./cypress/fixtures/example.json").then((data) => {
+    cy.log(data.name);
+  });
 });
