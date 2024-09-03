@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+// const { downloadFile } = require("cypress-downloadfile/lib/addPlugin");
 
 module.exports = defineConfig({
   e2e: {
@@ -10,6 +11,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    // setupNodeEvents(on, config) {
+    //   on("task", { downloadFile });
+    // },
     video: true,
     screenshotsFolder: "cypress/screenshots",
     videosFolder: "cypress/videos",

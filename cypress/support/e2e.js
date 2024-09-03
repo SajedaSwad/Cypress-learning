@@ -14,7 +14,16 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
+
+// beforeEach(()=>{
+//     cy.log('I am inside e2e.js')
+// })
+
+// const { downloadFile } = require("cypress-downloadfile/lib/addPlugin");//proplem is here
+// module.exports = (on, config) => {
+//   on("task", { downloadFile });
+// };
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
